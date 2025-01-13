@@ -1,0 +1,159 @@
+.shuffleBtn {
+  cursor: pointer;
+  text-decoration: none;
+
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.678);
+  font-size: 19px;
+  background: rgba(228, 228, 228, 0.555);
+  width: 140px;
+  height: 40px;
+
+  text-align: center;
+  border-radius: 40px;
+
+  backdrop-filter: blur(5px);
+  border: none;
+  margin: auto;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.characterAndBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.characterName {
+  color: rgb(219, 196, 196);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 35px;
+}
+.shuffleBtn:active {
+  background: #a3a3a3;
+  transform: scale(0.95);
+  background: rgba(235, 184, 184, 0.281);
+  border: transparent;
+  outline: none;
+}
+.shuffleBtn:focus {
+  outline: none;
+}
+
+.videoBg2 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+.shuffleDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-top: 14px;
+}
+.card-grid {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+
+  text-align: center;
+  width: 48vw;
+  height: fit-content;
+  row-gap: 3vh;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.turns {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .card-grid {
+    margin-top: 20vh;
+    width: 70%;
+    row-gap: 3vh;
+  }
+  .characterAndBtn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+  .main2 {
+    overflow-x: hidden;
+    margin-top: 0px;
+  }
+  .shuffleBtn {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .characterAndBtn {
+    margin-top: 0;
+  }
+  .card-grid {
+    width: 90%;
+    margin-top: 6vh;
+    row-gap: 0;
+    column-gap: 2px;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .main2 {
+    height: 100lvh;
+  }
+
+  .shuffleDiv {
+    margin-top: 0;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .turns {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  .shuffleBtn {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

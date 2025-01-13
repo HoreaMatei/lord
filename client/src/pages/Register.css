@@ -1,0 +1,171 @@
+/* General styling for the page */
+.register-page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  filter: brightness(120%);
+}
+
+.videoBg-register {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Styling the container for the form */
+.register-container {
+  position: relative;
+  color: rgba(223, 221, 221, 0.966);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  border-radius: 40px;
+  margin: auto;
+  width: fit-content;
+  min-height: fit-content;
+  width: 33vw;
+  padding: 20px;
+  max-width: 70%;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Form fields */
+form {
+  width: 30vw;
+}
+.register-container input {
+  width: 80%;
+  background-color: rgba(233, 232, 232, 0.705);
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.register-container input::placeholder {
+  color: #4e4d4d;
+}
+
+/* Button styling */
+.register-container button {
+  margin: auto;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+.register-container button:hover {
+  background-color: #ff5100;
+}
+
+.register-container button:active {
+  scale: 0.98;
+}
+
+/* Title styling */
+.register-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Link for login */
+
+.register-link,
+.register-link-div {
+  color: #ffae00;
+  font-size: 0.9rem;
+  display: block;
+
+  text-decoration: none;
+}
+
+.register-link {
+  text-decoration: underline;
+}
+.register-link-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 820px) {
+  .register-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .register-form {
+    width: 60vw;
+  }
+
+  .register-title {
+    font-size: 22px;
+  }
+
+  .register-container {
+    height: fit-content;
+    width: 70vw;
+  }
+
+  .register-container input {
+    height: 10px;
+    margin: auto;
+    margin-bottom: 3px;
+    font-size: 12px;
+  }
+
+  .register-container button {
+    margin: auto;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .register-container input {
+    height: 5px;
+  }
+  .register-container button {
+    height: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .register-link-div {
+    font-size: 12px;
+  }
+
+  .register-link {
+    font-size: 12px;
+  }
+}
