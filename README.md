@@ -1,0 +1,4 @@
+"# card" 
+"# lotr" 
+"# lotr" 
+"# lord" 
