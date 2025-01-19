@@ -5,7 +5,13 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require("cors");
-app.use(cors({ origin: "https://lord-121g.vercel.app" }));
+app.use(
+  cors({
+    origin: "https://lord-121g.vercel.app",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.options("*", cors());
 
 connectDB();
